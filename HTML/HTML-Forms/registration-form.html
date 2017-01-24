@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Last Name</title>
+<!-- A touch of CSS styling -->
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td:first-child {
+            text-align: right;
+            width: 185px;
+        }
+        td:nth-child(2) {
+            text-align: left;
+            width: 290px;
+        }
+        input[type=text]{
+            width: 93%;
+        }
+        textarea{
+            resize: none;
+            overflow: hidden;
+            width: 80%;
+        }       
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <table border="1" cellspacing="0" cellpadding="7" style="border: 1px solid black;">
+<!-- Last Name -->
+            <tr>
+                <td>
+                    <label for="lastName"> <strong> Last Name </strong> </label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="lastName" value="Nakov"/>
+                </td>
+            </tr>
+<!-- First Name -->
+            <tr>
+                <td>
+                    <label for="firstName"> <strong> First Name </strong> </label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="firstName" value="Svetlin"/>
+                </td>
+            </tr>
+<!-- Address -->
+            <tr>
+                <td>
+                    <label for="address"> <strong> Address </strong> </label>
+                </td>
+                <td colspan="3">
+                    <textarea id="address" rows="4" cols="35">17 Hristo Botev Str.                   floor 3, apt. 12
+                    </textarea>
+                </td>
+                </col>
+            </tr>
+<!-- City & State -->
+            <tr>
+                <td>
+                    <label for="city"> <strong> City </strong> </label>
+                </td>
+                <td style="width: 210px;">
+                    <input type="text" id="city" value="Kaspichan" style="width: 97%"/>
+                </td>
+                <td style="width: 40px; text-align: center;">
+                    <label for="state"> <strong> State </strong> </label>
+                </td>
+                <td style="width: 40px;">
+                    <input type="text" style="width: 40px;" id="state"/>
+                </td>
+            </tr>
+<!-- Zip/Postal Code -->
+            <tr>
+                <td>
+                    <label for="zipCode"> <strong> Zip/Postal Code </strong> </label>
+                </td>
+                <td colspan="3">
+                    <input type="text" id="zipCode" pattern="[0-9]{4}" value="9325" style="width: 25%"/>
+                </td>
+            </tr>
+<!-- Country -->
+            <tr>
+                <td>
+                    <label for="country"> <strong> Country </strong> </label>
+                </td>
+                <td colspan="3">
+                    <select name="country" id="country" style="width: 70%">
+                        <option value="Value 1" selected="selected"> Bulgaria </option>
+                        <option value="Value 2"> Romania </option>
+                        <option value="Value 3"> Greece </option>
+                        <option value="Value 3"> Other </option>
+                    </select>
+                </td>
+            </tr>
+<!-- Phone number -->
+            <tr>
+                <td>
+                    <label for="phoneNumber"> <strong> Phone (country code, </br> area code, numbers) </strong> </label>
+                </td>
+                <td colspan="3">
+                    (+<input type="text" id="phoneNumber" value="359" style="width: 15%"/>)
+                    <input type="text" value="88" style="width: 15%"/> 
+                    <input type="text" value="8334343" style="width: 50%"/>
+                </td>
+            </tr>
+<!-- E-mail -->
+            <tr>
+                <td>
+                    <label for="email"> <strong> E-mail </strong> </label>
+                </td>
+                <td colspan="3">
+                    <input type="email" id="email" value="nakov@kaspichan.org" style="width: 95%"/>
+                </td>
+            </tr>
+<!-- Birth date -->
+            <tr>
+                <td>
+                    <strong> Birth date </strong> 
+                </td>
+                <td colspan="3">
+                    <label for="birthMonth"> Month </label>
+                    <input type="text" id="birthMonth" pattern="(0[1-9]|1[012])" value="06" style="width: 8%"/> &nbsp;
+                    <label for="birthDay"> Day </label>
+                    <input type="text" id="birthDay" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])" value="14"style="width: 8%"/> &nbsp;
+                    <label for="birthYear"> Year (4 digit) </label>
+                    <input type="text" id="birthYear" pattern="[0-9]{4}" value="1980" style="width: 20%"/>
+                </td>
+            </tr>
+<!-- Gender -->
+            <tr>
+                <td>
+                    <label for="gender"> <strong> Gender </strong> </label>
+                </td>
+                <td colspan="3">
+                    <select name="gender" id="gender">
+                        <option value="Value 1" selected="selected"> Male </option>
+                        <option value="Value 2"> Female </option>
+                    </select>
+                </td>
+            </tr>
+<!-- Starting date -->
+            <tr>
+                <td> <strong> Starting date </strong> </td>
+                <td colspan="3">
+                    <input type="radio" id="spring2006" name="startingDate" value="Spring 2006" checked/>
+                    <label for="spring2006"> Spring 2006 </label> &nbsp; 
+                    <input type="radio" id="summer2006" name="startingDate" value="Summer 2006"/>
+                    <label for="summer2006"> Summer 2006 </label>
+                </td>
+            </tr>
+<!-- Comments/Questions -->
+            <tr>
+                <td>
+                    <label for="commentsOrQuestions"> <strong> Comments/Questions </strong> </label>
+                </td>
+                <td colspan="3">
+                    <textarea id="commentsOrQuestions" rows="6" cols="35" style="text-align: left; width: 85%;">Please send me mor information       about the lodging.
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center; background-color: lightblue;">
+                    <input type="submit" name="submitBtn" value="Submit" /> 
+                    <input type="reset" name="resetBtn" value="Clear This Form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
