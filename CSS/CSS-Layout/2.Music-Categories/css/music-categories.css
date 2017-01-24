@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial;
+}
+section {
+  width: 421px;
+  height: 538px;
+  background-color: #eee;
+  border-radius: 7px;
+}
+section h1 {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  font-weight: lighter;
+  font-size: 18px;
+  font-stretch: ultra-condensed;
+}
+section article {
+  position: absolute;
+  width: 396px;
+  height: 118px;
+  top: 69px;
+  left: 12px;
+  border: 1px solid #999;
+  background-color: white;
+}
+section article img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  float: left;
+}
+section article span {
+  position: absolute;
+  top: 15px;
+  left: 168px;
+  font-size: 13px;
+  font-stretch: normal;
+  width: 184px;
+  word-spacing: -2px;
+}
+section article div form input[type="image"] {
+  position: absolute;
+  top: 77px;
+  left: 240px;
+  z-index: 0;
+}
+section article div form input[type="image"]:nth-of-type(2) {
+  left: 319px;
+}
+section article div form a {
+  position: absolute;
+  font-size: 12px;
+  top: 83px;
+  left: 263px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+  z-index: 9999;
+}
+section article div form a:nth-of-type(2) {
+  left: 341px;
+}
+section article:nth-of-type(2) {
+  top: 225px;
+}
+section article:nth-of-type(2) span {
+  width: 204px;
+}
+section article:nth-of-type(3) {
+  top: 383px;
+  height: 127px;
+}
+section article:nth-of-type(3) span {
+  width: 198px;
+}
+section article:nth-of-type(3) div input[type="image"] {
+  top: 92px;
+}
+section article:nth-of-type(3) div a {
+  top: 98px;
+}

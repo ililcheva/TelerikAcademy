@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body div#wrapper {
+  position: relative;
+  top: 1px;
+  left: 1px;
+  width: 608px;
+  height: 322px;
+  background-color: #1e3741;
+  border-radius: 5px;
+  border: 1px solid #337d8f;
+  font-family: Arial;
+}
+body div#wrapper nav {
+  position: absolute;
+}
+body div#wrapper nav button {
+  background-color: #4b5f67;
+  position: absolute;
+  top: 7px;
+  border: none;
+  width: 73px;
+  height: 30px;
+}
+body div#wrapper nav button:nth-of-type(1) {
+  background-color: #1e3741;
+}
+body div#wrapper nav button:nth-of-type(2) {
+  left: 75px;
+  width: 59px;
+}
+body div#wrapper nav button:nth-of-type(3) {
+  left: 135px;
+  width: 65px;
+}
+body div#wrapper nav button:nth-of-type(4) {
+  left: 201px;
+  width: 89px;
+}
+body div#wrapper nav button:nth-of-type(5) {
+  left: 291px;
+  width: 111px;
+}
+body div#wrapper nav button:nth-of-type(6) {
+  left: 403px;
+  width: 90px;
+}
+body div#wrapper nav button a {
+  color: #8fa8b3;
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: bold;
+}
+body div#wrapper nav button a#white {
+  color: white;
+}
+body div#wrapper nav button a#underlined {
+  text-decoration: underline;
+}
+body div#wrapper main {
+  width: 608px;
+  height: 273px;
+  position: absolute;
+  top: 49px;
+  font-size: 12px;
+  color: #9f9fa5;
+}
+body div#wrapper main section {
+  width: 234px;
+  height: 274px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+body div#wrapper main section header {
+  height: 35px;
+  background-color: #00968c;
+  color: #fffeff;
+}
+body div#wrapper main section header span {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+body div#wrapper main section article {
+  height: 63px;
+  border-bottom: 1px solid #3a4f58;
+}
+body div#wrapper main section article:nth-of-type(3) {
+  height: 48px;
+}
+body div#wrapper main section article:nth-of-type(4) {
+  height: 60px;
+}
+body div#wrapper main section article span {
+  position: relative;
+  top: 10px;
+  left: 8px;
+}
+body div#wrapper main aside {
+  position: absolute;
+  left: 234px;
+  top: 1px;
+}
+body div#wrapper main aside img {
+  width: 343px;
+  height: 251px;
+}

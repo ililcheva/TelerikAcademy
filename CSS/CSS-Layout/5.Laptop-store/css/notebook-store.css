@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Corbel;
+  font-size: 15px;
+}
+body div#wrapper {
+  width: 929px;
+  height: 671px;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+body div#wrapper header {
+  height: 58px;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: 180px;
+  font-size: 24pt;
+  font-weight: bold;
+}
+body div#wrapper header a {
+  color: #36c0f3;
+}
+body div#wrapper div#line {
+  display: inline-block;
+  position: absolute;
+  top: 58px;
+  left: 29px;
+  background-color: black;
+  height: 3px;
+  width: 864px;
+}
+body div#wrapper main section:nth-of-type(1) {
+  position: absolute;
+  top: 73px;
+  left: 12px;
+  border: 2px solid black;
+  font-size: 18pt;
+  width: 598px;
+  height: 582px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset {
+  position: absolute;
+  display: inline-block;
+  left: 7px;
+  top: 5px;
+  height: 182px;
+  width: 281px;
+  border: 2px solid black;
+}
+body div#wrapper main section:nth-of-type(1) fieldset legend {
+  text-align: center;
+  width: 204px;
+  padding: 0 8px 0 0;
+}
+body div#wrapper main section:nth-of-type(1) fieldset img {
+  position: absolute;
+  left: 7px;
+  top: 33px;
+  width: 50%;
+}
+body div#wrapper main section:nth-of-type(1) fieldset span {
+  position: absolute;
+  left: 150px;
+  top: 60px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset span:nth-of-type(2) {
+  top: 103px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset span:nth-of-type(3) {
+  top: 144px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset span:nth-of-type(4) {
+  top: 144px;
+  left: 32px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset:nth-of-type(2n) {
+  left: 300px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset:nth-of-type(3),
+body div#wrapper main section:nth-of-type(1) fieldset:nth-of-type(4) {
+  top: 194px;
+}
+body div#wrapper main section:nth-of-type(1) fieldset:nth-of-type(5),
+body div#wrapper main section:nth-of-type(1) fieldset:nth-of-type(6) {
+  top: 381px;
+}
+body div#wrapper main section:nth-of-type(2) {
+  position: absolute;
+  top: 163px;
+  left: 635px;
+  font-size: 23pt;
+}
+body div#wrapper main section:nth-of-type(2) div {
+  width: 265px;
+  height: 79px;
+  margin: 0 0 35px 0;
+}
+body div#wrapper main section:nth-of-type(2) div span {
+  position: relative;
+  bottom: 10px;
+}
+body div#wrapper main section:nth-of-type(2) div span:nth-of-type(2) {
+  position: relative;
+  left: 25px;
+}
+body div#wrapper main section:nth-of-type(2) div input[type=range] {
+  width: 85%;
+  margin: 0 0 0 20px;
+  height: 10px;
+}
+body div#wrapper main section:nth-of-type(2) div:nth-of-type(3) span:nth-of-type(2) {
+  left: 45px;
+}
+body div#wrapper main section:nth-of-type(2) div:nth-of-type(4) span:nth-of-type(2) {
+  left: 36px;
+}

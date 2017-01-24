@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+div {
+    width: 97%; 
+    background-color: black; 
+    border: 1px solid red; 
+    border-radius: 60px; 
+}

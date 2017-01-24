@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+}
+body div.wrapper {
+  width: 786px;
+  height: 577px;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  position: relative;
+}
+#main-navigation {
+  display: inline-block;
+  width: 141px;
+  height: 577px;
+}
+#main-navigation #nav-header {
+  font-size: 0.9em;
+  display: inline-block;
+  margin: 2px 0 0 0px;
+  padding: 15px 0 0 20px;
+  font-family: David;
+  background-image: url("../img/house.png");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 2% 80%;
+  font-weight: bold;
+}
+#main-navigation ul {
+  margin-top: 12.5px;
+}
+#main-navigation ul li {
+  font-size: 0.9em;
+  margin: -2px 2px;
+}
+#main-navigation ul li.ul-header {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: #880000;
+  margin: -2px 2px;
+}
+#main-navigation ul li a {
+  text-decoration: none;
+  color: black;
+}
+main {
+  margin-top: 2px;
+  width: 494px;
+  height: 548px;
+  display: inline-block;
+  position: absolute;
+  font-family: Arial;
+  background-color: white;
+  border: 1px solid gray;
+}
+main h1 {
+  font-size: 1.4em;
+  margin: 20px 0 10px 5px;
+}
+main button {
+  background-color: white;
+  border: 1px solid black;
+  width: 96px;
+  height: 18px;
+  text-align: center;
+  margin: 0 0 0 5px;
+  font-size: 0.8em;
+}
+main button:nth-of-type(2) {
+  margin: 0;
+}
+main button span {
+  position: relative;
+  left: -20px;
+  top: -1px;
+}
+main button span#next {
+  left: 30px;
+}
+main hr {
+  height: 1px;
+  width: 482px;
+  margin: 7px 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main h2 {
+  margin: 7px 5px;
+  width: 482px;
+  height: 16px;
+  background-color: #808080;
+  color: white;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 3px;
+}
+main div {
+  display: inline-block;
+  width: 484px;
+}
+main div .main-spans {
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 0 0 8px;
+  width: 100%;
+}
+main div a {
+  position: relative;
+  top: -10px;
+  left: 8px;
+}
+main div.css-tutorial {
+  height: 100px;
+}
+main div.css-tutorial img {
+  float: left;
+  width: 20%;
+  margin: 2px 10px;
+}
+main div.css-tutorial span {
+  display: inline-block;
+  width: 350px;
+  margin: 10px 0 0 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+main div.css-tutorial a {
+  position: relative;
+  left: 122px;
+  top: -15px;
+}
+main div.css-example {
+  height: 50px;
+}
+main div.css-example.css-reference {
+  height: 53px;
+}
+main div.css-example.css-quiz-test {
+  height: 39px;
+}
+.red-and-underlined {
+  color: #a33533;
+  font-size: 0.9em;
+  font-weight: light;
+}
+.aside-links {
+  display: inline-block;
+  width: 146px;
+  float: right;
+  position: relative;
+  right: 1px;
+}
+.aside-links table {
+  margin-top: 1px;
+}
+.aside-links table tr td {
+  width: 146px;
+  height: 70px;
+  border: 1px solid gray;
+  background-color: white;
+  text-align: center;
+}
+.aside-links table tr td.one-line {
+  height: 23px;
+}
+.aside-links table tr td.two-line {
+  height: 36px;
+}
+.aside-links table tr td.three-line {
+  height: 48px;
+}
+.aside-links table tr td.with-button {
+  height: 66px;
+}
+.aside-links table tr td.with-button #styled-button {
+  width: 98px;
+  height: 27px;
+  color: #23c7ff;
+  border: 1px solid #7ca9ca;
+  background: linear-gradient(to bottom, #daf2ff 0%, #cdedfd 50%, #c2e7fa 51%, #c4e8fa 100%);
+  box-shadow: inset -1px 1px white, inset -5px 0px 10px #a1daf8, inset 5px 0px 10px #a1daf8;
+}
+.aside-links table tr td.web-hosting {
+  height: 63px;
+}
+.aside-links table tr td.web-hosting span {
+  top: -1px;
+}
+.aside-links table tr td span {
+  display: inline-block;
+  width: 100%;
+  height: 16px;
+  background-color: #808080;
+  font-family: Arial;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+  padding: 2px 0;
+  top: -1px;
+  box-sizing: border-box;
+}
+.aside-links table tr td > a {
+  font-size: 0.9em;
+}
+.aside-links input[type=text] {
+  width: 92px;
+  height: 18px;
+  margin: 0 0 0 10px;
+}

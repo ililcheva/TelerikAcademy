@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Windows Calculator</title>
+   <link rel="stylesheet" type="text/css" href="./css/windows-calculator.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="./img/calculator.png" alt="calculator">
+            <h1>Calculator</h1>
+            <button id="exit">
+                <img src="./img/exit.png" alt="exit">
+            </button>
+            <button id="maximize"> 
+                <img src="./img/maximize.png" alt="maximize">
+            </button>
+            <button id="minimize">
+                <img src="./img/minimize.png" alt="minimize">
+            </button>
+        </header>
+        <div id="border-wrapper">
+            <nav>
+                <button class="nav-button">View</button>
+                <button class="nav-button" id="nav-button-second">Edit</button>
+                <button class="nav-button">Help</button>
+            </nav>
+            <main>
+                <div id="textbox">
+                    <form action="post">
+                        <input type="text" value="8854455">
+                    </form>
+                </div>
+                <div id="binary-numbers">
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">63</td>
+                            <td colspan="3">47</td>
+                            <td align="right">32</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>1000</td>
+                            <td>0111</td>
+                            <td>0001</td>
+                            <td>1011</td>
+                            <td>1011</td>
+                            <td>0111</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">31</td>
+                            <td colspan="3">15</td>
+                            <td align="right">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="radio-and-buttons">
+                <table>
+                    <tr>
+                        <td colspan="2" rowspan="3">
+                        <div class="radio-cells">
+                            <form action="post">
+                                <input name="upper-radio" type="radio" id="hex">
+                                <label for="hex">Hex</label> </br>
+                                <input name="upper-radio" type="radio" id="dec" checked>
+                                <label for="dec">Dec</label> </br>
+                                <input name="upper-radio" type="radio" id="oct">
+                                <label for="oct">Oct</label> </br>
+                                <input name="upper-radio" type="radio" id="bin">
+                                <label for="bin">Bin</label> </br>
+                            </form>
+                        </div>
+                        </td>
+                        <td><button class="not-working-button"></button></td>
+                        <td><button class="functions">Mod</button></td>
+                        <td><button class="not-working-button" id="letter">A</button></td>
+                        <td><button class="Ms">MC</button></td>
+                        <td><button class="Ms">MR</button></td>
+                        <td><button class="Ms">MS</button></td>
+                        <td><button class="Ms">M+</button></td>
+                        <td><button class="Ms">M-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="functions">(</button></td>
+                        <td><button class="functions">)</button></td>
+                        <td><button class="not-working-button" id="letter">B</button></td>
+                        <td><button class="functions"><span id="arrowed">&larr;</span></button></td>
+                        <td><button class="functions"><span id="CE-and-C">CE</span></button></td>
+                        <td><button class="functions"><span id="CE-and-C">C</span></button></td>
+                        <td><button class="functions">&plusmn;</button></td>
+                        <td><button class="not-working-button"><span id="sqrt">&radic;</span></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="functions">RoL</button></td>
+                        <td><button class="functions">RoR</button></td>
+                        <td><button class="not-working-button" id="letter">C</button></td>
+                        <td><button class="numbers">7</button></td>
+                        <td><button class="numbers">8</button></td>
+                        <td><button class="numbers">9</button></td>
+                        <td><button class="functions">/</button></td>
+                        <td><button class="not-working-button"><span id="percent">%</span></button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">
+                        <div class="radio-cells">
+                            <form action="post">
+                            <input name="lower-radio" type="radio" id="qword" checked>
+                                <label for="qword">Qword</label> </br>
+                                <input name="lower-radio" type="radio" id="dword">
+                                <label for="dword">Dword</label> </br>
+                                <input name="lower-radio" type="radio" id="word">
+                                <label for="word">Word</label> </br>
+                                <input name="lower-radio" type="radio" id="byte">
+                                <label for="byte">Byte</label> </br>
+                            </form>
+                        </div>
+                        </td>
+                        <td><button class="functions">Or</button></td>
+                        <td><button class="functions">Xor</button></td>
+                        <td><button class="not-working-button" id="letter">D</button></td>
+                        <td><button class="numbers">4</button></td>
+                        <td><button class="numbers">5</button></td>
+                        <td><button class="numbers">6</button></td>
+                        <td><button class="functions"><span id="lowast">&lowast;</span></button></td>
+                        <td><button class="not-working-button"><span id="one-with-x">1/</span><em><span id="x">x</span></em></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="functions">Lsh</button></td>
+                        <td><button class="functions">Rsh</button></td>
+                        <td><button class="not-working-button" id="letter">E</button></td>
+                        <td><button class="numbers">1</button></td>
+                        <td><button class="numbers">2</button></td>
+                        <td><button class="numbers">3</button></td>
+                        <td><button class="functions">-</button></td>
+                        <td rowspan="2"><button id="equals">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="functions">Not</button></td>
+                        <td><button class="functions">And</button></td>
+                        <td><button class="not-working-button" id="letter">F</button></td>
+                        <td colspan="2"><button id="zero">0</button></td>
+                        <td><button class="not-working-button">&period;</button></td>
+                        <td><button class="functions">+</button></td>
+                    </tr>
+                </table>
+                </div>
+            </main> 
+        </div>
+    </div>
+</body>
+</html>

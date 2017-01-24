@@ -1,0 +1,380 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 7px;
+    margin-top:10px;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+div#wrapper{
+    width: 451px;
+    height: 433px;
+    background: url("../img/background.png")
+}
+
+body>div>header{
+    height: 31px;
+}
+
+body>div>header>img{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 7px;
+    width: 13px;
+    height: 17px;
+}
+
+body>div>header>h1{
+    display: inline-block;
+    font: button;
+    font-weight: normal;
+    font-size: 13px;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 3px;
+    text-shadow: 2px 2px 7px white, -2px -2px 7px white;
+}
+
+body>div>header>button{
+    float: right;
+}
+
+body div header button#maximize{
+    border-width:thin;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-left: none;
+    border-top: none;
+    width: 28px;
+    height: 21px;
+    box-shadow: inset 1px 1px rgba(255,255,255,0.5), inset -1px -1px rgba(255,255,255,0.5);
+    background: linear-gradient(to bottom, rgba(228,237,247,1) 0%,rgba(212,223,235,1) 48%,rgba(167,185,204,1) 54%,rgba(173,191,214,1) 96%,rgba(181,199,222,1) 99%,rgba(183,201,224,0) 100%);
+}
+
+body>div>header>button#maximize>img{
+    width: 13px;
+    height: 10px;
+    vertical-align: center;
+    margin-top: 2px;
+}
+
+body div header button#exit{
+    position:relative;
+    border-width:thin;
+    margin-right: 10px;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    width: 51px;
+    height: 21px;
+    background: linear-gradient(to bottom, rgba(235,179,171,1) 0%,rgba(211,139,129,1) 48%,rgba(182,69,55,1) 54%,rgba(194,115,102,1) 96%,rgba(194,115,102,1) 99%,rgba(194,115,102,0) 100%);
+    box-shadow: inset 1px 1px rgba(255,255,255,0.5), inset -1px -1px rgba(255,255,255,0.5),inset 10px 0 20px -3px rgba(182,69,55,0.5), inset -10px 0 20px -3px rgba(182,69,55,0.5);
+}
+
+body div header button#exit:hover{
+    background: linear-gradient(to bottom, rgba(244,155,139,1) 0%,rgba(230,114,93,1) 49%,rgba(170,33,12,1) 52%,rgba(178,53,37,1) 100%);
+    box-shadow: 0px 0px 10px red, inset  0 -9.5px 20px -11px #fff600, inset 10px 0 20px -3px rgba(182,69,55,0.5), inset -10px 0 20px -3px rgba(182,69,55,0.5);
+}
+
+body div header button#minimize{
+    border-width:thin;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-bottom-left-radius: 5px;
+    border-top: none;
+    width: 30px;
+    height: 21px;
+    box-shadow: inset 1px 1px rgba(255,255,255,0.5), inset -1px -1px rgba(255,255,255,0.5);
+    background: linear-gradient(to bottom, rgba(228,237,247,1) 0%,rgba(212,223,235,1) 48%,rgba(167,185,204,1) 54%,rgba(173,191,214,1) 96%,rgba(181,199,222,1) 99%,rgba(183,201,224,0) 100%);
+}
+
+body div header button#minimize:hover{
+    background: linear-gradient(to bottom, rgba(183,218,241,1) 0%,rgba(131,182,216,1) 49%,rgba(41,124,176,1) 52%,rgba(52,128,183,1) 100%);
+    box-shadow: 0px 0px 10px rgba(0,150,255,0.8), inset  0 -9.5px 20px -11px #29cddb, inset 10px 0 20px -3px rgba(0,100,255,0.3), inset -10px 0 20px -3px rgba(0,100,255,0.3);
+}
+
+body>div>header>button#minimize>img{
+    width: 12px;
+    height: 4px;
+    vertical-align: bottom;
+    margin-bottom: 2px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+button#exit:focus, button#maximize:focus, button#minimize:focus {
+    outline: none;
+}
+
+div#border-wrapper{
+    width: 432px;
+    height: 393px;
+    border: 1px solid rgba(0,0,0,0.6);
+    margin-left: 7px;
+    box-shadow: 1px 1px white, -1px -1px white;
+    border-radius: 2px;
+}
+
+nav{
+    height: 21px;
+    background: linear-gradient(to bottom, rgba(251,252,254,1) 0%,rgba(233,237,246,1) 33%,rgba(211,218,237,1) 36%,rgba(224,229,245,1) 96%,rgba(224,229,245,1) 99%,rgba(224,229,245,0) 100%);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+
+.nav-button{
+    width: 40px;
+    height: 18px;
+    font-size: 13px;
+    text-decoration: none;
+    display:inline-block;
+    color: black;
+    border: none;
+    background: none;
+    margin-top: 2px;
+}
+
+.nav-button:first-child{
+    margin-left:2px;
+}
+
+.nav-button:hover{
+    width: 40px;
+    height: 18px;
+    font-size: 13px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding-left: 3px;
+    padding-right: 3px;
+    box-shadow: 1px -1px 3px rgba(0,0,0,0.1), -1px 1px 3px rgba(0,0,0,0.1) ;
+}
+
+nav .nav-button:first-letter{
+    text-decoration: underline;
+}
+
+#nav-button-second,#nav-button-second:hover{
+    width: 36px;
+}
+
+main{
+    height: 371px;
+    background: linear-gradient(to bottom, rgba(237,244,252,1) 0%,rgba(217,228,241,1) 99%);
+}
+
+div#textbox{
+    display:inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 408px;
+    height: 54px;
+    border: 1px solid rgba(0,0,0,0.6);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, rgba(229,238,251,1) 0%,rgba(254,255,255,1) 99%);
+}
+
+input[type="text"]{
+    font-family: "Consolas";
+    font-size: 25px;
+    width: 400px;
+    height: 51px;
+    background: none;
+    border: none;
+    margin: 3px;
+    margin-top: 6px;
+    text-align: right;
+}
+
+input[type="text"]:focus{
+    outline:none;
+}
+
+div#binary-numbers{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #d9e4f1;
+    width: 408px;
+    height: 65px;
+    border: 1px solid rgba(0,0,0,0.6);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    border-radius: 2px;
+}
+
+main div#binary-numbers table{
+    margin-left: 7px;
+    margin-top: 2px;
+    display: inline-block;
+
+}
+
+
+main div#binary-numbers table tr td{
+    font-family: Consolas;
+    font-size: 13px;
+    padding-right: 23px;
+}
+
+main div#binary-numbers table tr:nth-child(2n) td{
+    color: rgba(0,0,0,0.5)
+}
+
+div#radio-and-buttons{
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 5px;
+    width: 408px;
+    height: 207px;
+}
+
+
+
+.functions, .not-working-button, .numbers, .Ms, #equals, #zero{
+    margin-left: 4px;
+    margin-bottom: 4px;
+    width: 35px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: center;
+}
+
+#zero{
+    width: 78px;
+    height: 30px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#equals{
+    font-size: 25px;
+    padding-bottom: 2px;
+    width: 35px;
+    height: 66px;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    vertical-align: center;
+}
+
+div.radio-cells{
+    display: inline-block;
+    margin-bottom: 4px;
+    width: 78px;
+    height: 101px;
+    border: 1px solid rgba(0,0,0,0.6);
+    background-color: #d9e4f1;
+    box-shadow: 0px -0.5px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+div.radio-cells>form{
+    margin-left: 8px;
+    margin-top: 9px;
+}
+
+input[type="radio"]{
+  margin: 5px 0 0 0;
+}
+
+label{
+    position:absolute;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+
+.not-working-button{
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: #d9e4f1;
+    box-shadow: 0px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+}
+
+.Ms{
+    border: 1px solid rgba(0,0,0,0.6);
+    background-color: #d9e4f1;
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    border-radius: 2px;
+}
+
+.functions, #equals{
+    border: 1px solid rgba(0,0,0,0.6);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, rgba(240,246,251,1) 1%,rgba(230,237,245,1) 44%,rgba(213,224,237,1) 48%,rgba(213,224,238,1) 100%);
+}
+
+.numbers, #zero{
+    font-family: verdana;
+    border: 1px solid rgba(0,0,0,0.6);
+    box-shadow: inset 1px 1px white, inset -1px -1px white;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, rgba(250,254,255,1) 1%,rgba(241,245,249,1) 44%,rgba(231,237,245,1) 48%,rgba(239,247,252,1) 100%);
+}
+
+.functions:hover, .numbers:hover, #zero:hover, #equals:hover{
+    box-shadow: inset  0 -15px 10px -9px #fcfcd4, inset 1px 1px white, inset -1px -1px white, 1px 1px #fbe772, -1px -1px #fbe772;
+    background: linear-gradient(to bottom, rgba(254,240,224,1) 1%,rgba(253,228,203,1) 44%,rgba(251,209,120,1) 48%,rgba(251,239,147,1) 100%);
+}
+
+.Ms:hover{
+    box-shadow: inset  0 -12px 10px -9px #fcfcd4, inset 1px 1px white, inset -1px -1px white, 1px 1px #fbe772, -1px -1px #fbe772;
+    background: linear-gradient(to bottom, rgba(253,207,107,1) 0%,rgba(252,252,212,1) 100%);
+}
+
+button:focus{
+    outline: none;
+}
+
+.numbers, #zero{
+    font-size: 16px;
+    vertical-align: center;
+    padding-top:1px;
+}
+
+span#x{
+    font-family: Constantia;
+}
+
+.functions{
+    padding-top: 1px;
+    font-size: 12px;
+}
+
+#letter, #lowast{
+    font-size: 15px;
+}
+
+#sqrt{
+    font-size: 11px;
+    padding-right: 2px;
+}
+
+#percent{
+    font-size: 12px;
+}
+
+#CE-and-C, .Ms{
+    font-size: 14px;
+    font-family: Consolas;
+}
+
+#one-with-x{
+    font-family: verdana;
+}
+
+#arrowed{
+    font-size: 20px;
+    font-weight: bolder;
+    vertical-align: center;
+}
+

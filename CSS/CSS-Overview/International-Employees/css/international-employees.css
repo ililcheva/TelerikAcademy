@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.countryAlign{
+    position: absolute;
+    padding-top: 1px;
+}
+
+input[type=checkbox]{
+    opacity: 0.7;
+}
+
+table{
+    border-collapse: collapse;
+    border-width: thin;
+    border-style: none;
+    width: 456px;
+    height: 133px;
+}
+
+tbody{
+    border: solid rgba(164, 162, 143, 1);
+    border-width: thin;
+}
+
+tbody td{
+    height: 26px;
+    text-align: left;
+    padding-left: 5px;
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 12px;
+    border-right: solid rgba(164, 162, 143, 0.5);
+    border-width: thin;
+}
+
+tbody td:first-child{
+    width: 138px;
+}
+
+tbody td:nth-child(2){
+    width: 110px;
+}
+
+tbody td:nth-child(3){
+    width: 126px;
+}
+
+tbody td:nth-child(4){
+    width: 83px;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #ececd8;
+}
+
+thead{
+    background: linear-gradient(to bottom,  rgba(92,192,6,1) 0%,rgba(82,181,6,1) 100%);
+}
+
+thead th{
+    height: 21px;
+    text-align: left;
+    padding-left: 5px;
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 12px;
+    color: white;
+    border: 1px solid rgba(164, 162, 143, 0.5);
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.grayish {
+    font-size: 11px;
+    color: #bcbebf;
+}
+
+#notAnswered{
+    font-size: 11px;
+    color: #e66643;
+}
+
+#publicPost, .yellowish {
+    font-size: 11px;
+    color: #fbf1b3;
+    font-weight: normal;
+}
+
+#reddish {
+    color: #ef102f;
+}
+
+div {
+    background-color: #595959;
+    width: 304px;
+    height: 205px;
+    font-family: Arial;
+    padding-left: 2px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight:normal;
+    color: #bebab1;
+}
+
+img {
+    width: 10px;
+    height: 10px;
+}
+
+td {
+    padding-bottom: 13px;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+    font-size: 11px;
+    color: #fff8f3;
+}
+

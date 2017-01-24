@@ -1,0 +1,89 @@
+// out: ./members-login.css
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    div#wrapper{
+        width: 660px;
+        height: 297px;
+        background-color: #3b3b3b;
+        border: 1px solid #806850;
+        border-radius: 7px;
+    }
+    header{
+        width: 660px;
+        border: 1px 1px 0 1px solid #806850;
+        border-radius: 7px;
+        height: 67px;
+        background: url("../img/header.png");
+        z-index: 999999;
+        img{
+            position: absolute;
+            top: 8px;
+            left: 13px;
+        }
+        span{
+            position: absolute;
+            top: 16px;
+            left: 72px;
+            color: white;
+            font-size: 18pt;
+            font-weight: bold;
+            font-stretch: ultra-condensed;
+        }
+        form{
+            input[type=text]{
+                position: absolute;
+                left: 248px;
+                top: 18px;
+                width: 135px;
+                height: 12px;
+                font-family: "MS Sans Serif";
+                font-size: 14px;
+                padding: 0 0 6px 10px;
+            }
+            input[type=text]:nth-of-type(2){
+                left: 422px;
+            }
+            input[type="image"]{
+                position: absolute;
+                left: 596px;
+                top: 16px;
+            }
+        }
+    }
+    main{
+        position: absolute;
+        top:68px;
+        height: 230px;
+        width: 660px;
+        h1{
+            position: absolute;
+            top: 16px;
+            left: 12px;
+            color: #f7da1c;
+            font-weight: lighter;
+            font-family: 20pt;
+        }
+        div{
+            display: inline-block;
+            color: #a1a1a1;
+            font-family: "Verdana";
+            font-size: 9.5pt;
+            line-height:135%;
+            position: absolute;
+            top: 70px;
+            left: 12px;
+            width: 600px;
+            height: 148px;
+            word-spacing: 0.5px;
+            letter-spacing: 0.1px;
+            span{
+                color: white;
+            }
+        }
+    }
+}

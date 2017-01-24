@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 30px;
+}
+body li a,
+body li a:visited,
+body li a:focus {
+  text-decoration: none;
+  color: black;
+}
+body ul {
+  list-style-type: none;
+}
+body ul ul {
+  display: none;
+}
+body li:hover > ul {
+  display: block;
+  position: relative;
+  left: 5px;
+}
+body li:hover > ul a {
+  color: gray;
+}
+body li:hover > a {
+  text-decoration: underline;
+}
