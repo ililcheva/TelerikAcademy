@@ -133,3 +133,55 @@ function solve() {
 
 
 module.exports = solve;
+
+const jsOOP = solve();
+jsOOP.init('Javascript OOP', ['Functions declarions, expressions and IIFEs', 'Closures and Scope', 'Modules and Patterns']);
+let iIl = jsOOP.addStudent('Iva Ilcheva');
+let iIv = jsOOP.addStudent('Ivan Ivanov');
+let dKo = jsOOP.addStudent('Dimitar Kostov');
+let nGe = jsOOP.addStudent('Nina Georgieva');
+let kFi = jsOOP.addStudent('Karolina Filipova');
+console.log(jsOOP.getAllStudents());
+/*
+[ { firstname: 'Iva', lastname: 'Ilcheva', id: 1 },
+  { firstname: 'Ivan', lastname: 'Ivanov', id: 2 },
+  { firstname: 'Dimitar', lastname: 'Kostov', id: 3 },
+  { firstname: 'Nina', lastname: 'Georgieva', id: 4 },
+  { firstname: 'Karolina', lastname: 'Filipova', id: 5 } ]
+ */
+jsOOP.submitHomework(iIl, 1);
+jsOOP.submitHomework(iIl, 2);
+jsOOP.submitHomework(iIl, 3);
+jsOOP.pushExamResults([{ StudentID: iIl, score: 200 }, { StudentID: iIv, score: 100 }, { StudentID: dKo, score: 90 }, { StudentID: nGe, score: 190 }, { StudentID: kFi, score: 45 }]);
+console.log(jsOOP.getTopStudents());
+/*[ { firstName: 'Iva',
+    lastName: 'Ilcheva',
+    ID: 1,
+    homeworks: [ 1, 2, 3 ],
+    examScore: 200,
+    finalScore: 150.25 },
+  { firstName: 'Nina',
+    lastName: 'Georgieva',
+    ID: 4,
+    homeworks: [],
+    examScore: 190,
+    finalScore: 142.5 },
+{ firstName: 'Ivan',
+    lastName: 'Ivanov',
+    ID: 2,
+    homeworks: [],
+    examScore: 100,
+    finalScore: 75 },
+  { firstName: 'Dimitar',
+    lastName: 'Kostov',
+    ID: 3,
+    homeworks: [],
+    examScore: 90,
+    finalScore: 67.5 },
+  { firstName: 'Karolina',
+    lastName: 'Filipova',
+    ID: 5,
+    homeworks: [],
+    examScore: 45,
+    finalScore: 33.75 } ]
+ */
