@@ -1,19 +1,3 @@
-/* Task Description */
-/* 
- * Create a module for a Telerik Academy course
- * The course has a title and presentations
- * Each presentation also has a title
- * There is a homework for each presentation
- * There is a set of students listed for the course
- * Each student has firstname, lastname and an ID
- * IDs must be unique integer numbers which are at least 1
- * Each student can submit a homework for each presentation in the course
- * Create method init
- * Accepts a string - course title
- * Accepts an array of strings - presentation titles
- * Throws if there is an invalid title
- * Titles do not start or end with spaces
- * Titles do not have consecutive spaces
 'use strict';
 
 function solve() {
@@ -61,7 +45,7 @@ function solve() {
             }
         },
         areValidResults: function(results, students) {
-            if (results.find(r => (r.StudentID > students.length || r.StudentID < 0 || isNaN(r.StudentID)))) {
+            if (results.find(r => (r.StudentID > students.length || r.StudentID < 1 || isNaN(r.StudentID)))) {
                 throw 'Invalid StudentID';
             }
             if (results.find(r => isNaN(r.score))) {
@@ -71,7 +55,7 @@ function solve() {
     }
 
     const getNextId = (function() {
-        let counter = -1;
+        let counter = 0;
         return function() {
             return counter += 1;
         };
@@ -119,6 +103,7 @@ function solve() {
             VALIDATOR.isValidHomeworkID(homeworkID, this.presentations);
             let student = this.students.find(s => s.ID === studentID);
             student.homeworks.push(homeworkID);
+            return this;
         },
         pushExamResults: function(results) {
             VALIDATOR.areValidResults(results, this.students);
@@ -126,20 +111,21 @@ function solve() {
                 .sort((a, b) => a - b)
                 .filter((r, i, rs) => r === rs[i - 1]);
             if (duplicateCheck.length !== 0) {
-                throw 'There is a cheater';
+                throw 'There is a cheater!';
             }
             for (let student of this.students) {
                 let studentIndex = results.findIndex(r => r.StudentID === student.ID);
                 if (studentIndex !== -1) {
-                    student.examScore = results[studentIndex].Score;
+                    student.examScore = results[studentIndex].score;
                 }
             }
+            return this;
         },
         getTopStudents: function() {
-            for (let student of students) {
+            for (let student of this.students) {
                 student.finalScore = (0.75 * student.examScore) + (0.25 * (student.homeworks.length / this.presentations.length));
             }
-            this.students.sort((a, b) => a.finalScore < b.finalScore);
+            this.students.sort((a, b) => b.finalScore - a.finalScore);
             return this.students.slice(0, 10);
         }
     };
@@ -149,3 +135,55 @@ function solve() {
 
 
 module.exports = solve;
+
+const jsOOP = solve();
+jsOOP.init('Javascript OOP', ['Functions declarions, expressions and IIFEs', 'Closures and Scope', 'Modules and Patterns']);
+let iIl = jsOOP.addStudent('Iva Ilcheva');
+let iIv = jsOOP.addStudent('Ivan Ivanov');
+let dKo = jsOOP.addStudent('Dimitar Kostov');
+let nGe = jsOOP.addStudent('Nina Georgieva');
+let kFi = jsOOP.addStudent('Karolina Filipova');
+console.log(jsOOP.getAllStudents());
+/*
+[ { firstname: 'Iva', lastname: 'Ilcheva', id: 1 },
+  { firstname: 'Ivan', lastname: 'Ivanov', id: 2 },
+  { firstname: 'Dimitar', lastname: 'Kostov', id: 3 },
+  { firstname: 'Nina', lastname: 'Georgieva', id: 4 },
+  { firstname: 'Karolina', lastname: 'Filipova', id: 5 } ]
+ */
+jsOOP.submitHomework(iIl, 1);
+jsOOP.submitHomework(iIl, 2);
+jsOOP.submitHomework(iIl, 3);
+jsOOP.pushExamResults([{ StudentID: iIl, score: 200 }, { StudentID: iIv, score: 100 }, { StudentID: dKo, score: 90 }, { StudentID: nGe, score: 190 }, { StudentID: kFi, score: 45 }]);
+console.log(jsOOP.getTopStudents());
+/*[ { firstName: 'Iva',
+    lastName: 'Ilcheva',
+    ID: 1,
+    homeworks: [ 1, 2, 3 ],
+    examScore: 200,
+    finalScore: 150.25 },
+  { firstName: 'Nina',
+    lastName: 'Georgieva',
+    ID: 4,
+    homeworks: [],
+    examScore: 190,
+    finalScore: 142.5 },
+{ firstName: 'Ivan',
+    lastName: 'Ivanov',
+    ID: 2,
+    homeworks: [],
+    examScore: 100,
+    finalScore: 75 },
+  { firstName: 'Dimitar',
+    lastName: 'Kostov',
+    ID: 3,
+    homeworks: [],
+    examScore: 90,
+    finalScore: 67.5 },
+  { firstName: 'Karolina',
+    lastName: 'Filipova',
+    ID: 5,
+    homeworks: [],
+    examScore: 45,
+    finalScore: 33.75 } ]
+ */
