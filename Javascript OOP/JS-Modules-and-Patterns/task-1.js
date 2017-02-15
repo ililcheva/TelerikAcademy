@@ -55,7 +55,7 @@ function solve() {
     }
 
     const getNextId = (function() {
-        let counter = -1;
+        let counter = 0;
         return function() {
             return counter += 1;
         };
