@@ -1,19 +1,3 @@
-/* Task Description */
-/* 
- * Create a module for a Telerik Academy course
- * The course has a title and presentations
- * Each presentation also has a title
- * There is a homework for each presentation
- * There is a set of students listed for the course
- * Each student has firstname, lastname and an ID
- * IDs must be unique integer numbers which are at least 1
- * Each student can submit a homework for each presentation in the course
- * Create method init
- * Accepts a string - course title
- * Accepts an array of strings - presentation titles
- * Throws if there is an invalid title
- * Titles do not start or end with spaces
- * Titles do not have consecutive spaces
 'use strict';
 
 function solve() {
