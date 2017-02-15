@@ -115,7 +115,7 @@ function solve() {
             for (let student of this.students) {
                 let studentIndex = results.findIndex(r => r.StudentID === student.ID);
                 if (studentIndex !== -1) {
-                    student.examScore = results[studentIndex].Score;
+                    student.examScore = results[studentIndex].score;
                 }
             }
         },
@@ -123,7 +123,7 @@ function solve() {
             for (let student of students) {
                 student.finalScore = (0.75 * student.examScore) + (0.25 * (student.homeworks.length / this.presentations.length));
             }
-            this.students.sort((a, b) => a.finalScore < b.finalScore);
+            this.students.sort((a, b) => b.finalScore - a.finalScore);
             return this.students.slice(0, 10);
         }
     };
