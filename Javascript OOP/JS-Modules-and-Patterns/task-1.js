@@ -186,4 +186,8 @@ console.log(jsOOP.getTopStudents());
     homeworks: [],
     examScore: 45,
     finalScore: 33.75 } ]
+<<<<<<< HEAD
  */
+=======
+ */
+>>>>>>> ccc6ceffa8d99996af3287c60aeb2307fcd28174
