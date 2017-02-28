@@ -157,7 +157,7 @@ function solve() {
             }
             let indexOfApp = this._apps.findIndex(item => item.name === app.name);
             if (indexOfApp !== -1) {
-                this._apps.splice(indexOfApp, 1);
+                this.takedownApp(app.name);
             }
             this._apps.push(copyApp(app));
             return this;
