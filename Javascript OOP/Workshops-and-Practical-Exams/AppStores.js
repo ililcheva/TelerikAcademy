@@ -157,7 +157,7 @@ function solve() {
             }
             let indexOfApp = this._apps.findIndex(item => item.name === app.name);
             if (indexOfApp !== -1) {
-                this._apps.splice(indexOfApp, 1);
+                this.takedownApp(app.name);
             }
             this._apps.push(copyApp(app));
             return this;
@@ -252,7 +252,7 @@ function solve() {
             let foundApps;
             if (appIndex === -1) {
                 foundApps = this.search(name);
-                let app = foundApps.find(app => app.name = name);
+                let app = foundApps.find(app => app.name === name);
                 if (app === undefined) {
                     throw new Error('Not found in the installed stores!');
                 } else {
